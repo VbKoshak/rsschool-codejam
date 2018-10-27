@@ -2,7 +2,7 @@
   "name": "code_jam_3",
   "version": "1.0.0",
   "description": "rsschool_codejam-3",
-  "main": "SumOfOther.js",
+  "main": "make.js",
   "scripts": {
     "test": "mocha test.js"
   },

@@ -1,5 +1,5 @@
 module.exports = function Sum(arr){
-    if(!Array.isArray(arr)) return "Not an array";
+	if(!Array.isArray(arr)) return "Not an array";
 	let length = arr.length;
 	let Sum = 0;
 	let array = arr;
