@@ -11,7 +11,7 @@ module.exports = function Rec (tree, deep) {
   this.right = tree.right
   if (this.right) Rec(this.right, this.dp + 1)
   this.dp--
-  if (this.dp == -1) {
+  if (this.dp === -1) {
     return this.result
   }
 }

@@ -1,9 +1,10 @@
 const assert = require('assert');
 Object.freeze(assert);
 
-//////////////////////////////
 
 const Sum = require('./src/SumOfOther.js');
+const Make = require('./src/make.js');
+const rec = require('./src/recursion.js');
 
 function Equal (arr1,arr2){
     let length = arr1.length;
@@ -33,6 +34,22 @@ function DEqual(a1, a2) {
     return true;
 }
 
+let sum = function(a,b)
+{
+    return a+b;
+}
+
+let subtr = function(a,b)
+{
+    return a-b;
+}
+
+let mult = function(a,b)
+{
+    return a*b;
+}
+
+
 describe('First_Task', () => {
     describe('Array', () => {
         it('1', () => {
@@ -61,25 +78,27 @@ describe('First_Task', () => {
 });
 
 
+describe('Second_Task', () => {
+    describe('Sum', () => {
+        it('1', () => {
+            let ars = Make(2)(1,2,3)(sum);
+            assert.equal(ars, 8);
+        });
+    });
+    describe('Substract', () => {
+        it('1', () => {
+            let ars = Make(21)(7,3,5)(subtr);
+            assert.equal(ars, 6);
+        });
+    });
+    describe('Multiplication', () => {
+        it('1', () => {
+            let ars = Make(2,4)(3)(4)(mult);
+            assert.equal(ars, 96);
+        });
+    });
+});
 
-///////////////////////////////
-
-// const Make = require('./src/make.js');
-//
-// describe('Once', () => {
-//   it('1', () => {
-//       let abc = function(a,b)
-//       {
-//           return a+b;
-//       }
-//       const ars = Make(1,2,3)(abc);
-//       assert.equal(ars, [1,20]);
-//   });
-// });
-
-///////////////////////////////
-
-const rec = require('./src/recursion.js');
 
 describe('Third_Task', () => {
     describe('Array', () => {
