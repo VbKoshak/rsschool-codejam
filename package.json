@@ -1,0 +1,31 @@
+{
+  "name": "code_jam_3",
+  "version": "1.0.0",
+  "description": "rsschool_codejam-3",
+  "main": "make.js",
+  "scripts": {
+    "test": "mocha test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VbKoshak/rsschool-codejam.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VbKoshak/rsschool-codejam/issues"
+  },
+  "homepage": "https://github.com/VbKoshak/rsschool-codejam#readme",
+  "devDependencies": {
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-node": "^8.0.0",
+    "eslint-plugin-promise": "^4.0.1",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "mocha": "^5.2.0"
+  }
+}
